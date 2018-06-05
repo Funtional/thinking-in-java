@@ -1,0 +1,15 @@
+package arrays;
+
+import java.util.Arrays;
+
+/**
+ * @author Cheng Cheng
+ * @date 2017-12-06 15:10
+ */
+public class ThreeDWithNew {
+    public static void main(String[] args) {
+        // 3-D array with fixed length:
+        int[][][] a = new int[2][2][4];
+        System.out.println(Arrays.deepToString(a));
+    }
+}
