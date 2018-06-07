@@ -1,0 +1,35 @@
+// 文件顶部增加plugins
+plugins {
+    id "com.gradle.build-scan" version "1.13.3"
+    id "base"
+}
+apply plugin: 'java'
+apply plugin: 'maven'
+
+// 同意构建扫描的许可协议
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
+}
+
+group = 'com.thinking'
+version = '1.0-SNAPSHOT'
+
+description = """thinking_in_java_4"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'com.moparisthebest.aptIn16', name: 'apt-mirror-api', version:'0.1'
+    compile group: 'junit', name: 'junit', version:'4.12'
+}
