@@ -34,7 +34,7 @@ class BlockedMutex {
             // This will never be available to a second task
             lock.lockInterruptibly(); // Special call
             print("lock acquired in f()");
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             print("Interrupted from lock acquisition in f()");
         }
     }
