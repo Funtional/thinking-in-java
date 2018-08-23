@@ -4,7 +4,7 @@ apply plugin: 'maven'
 group = 'com.thinking'
 version = '1.0-SNAPSHOT'
 
-description = """thinking_in_java_4"""
+description = """thinking-in-java"""
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
