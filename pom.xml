@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.thinking</groupId>
-    <artifactId>thinking_in_java_4</artifactId>
+    <artifactId>thinking-in-java</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>thinking_in_java_4</name>
+    <name>thinking-in-java</name>
     <url>http://maven.apache.org</url>
 
     <properties>
