@@ -5,7 +5,7 @@ import typeinfo.pets.Dog;
 
 import static net.mindview.util.Print.print;
 
-class PerformingDog extends Dog implements Performs {
+class PerformingDog extends Dog implements Performs { //PerformingDog 表演犬
     @Override
     public void speak() {
         print("Woof!");

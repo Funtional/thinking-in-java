@@ -16,7 +16,7 @@ public abstract class PetCreator {
     public abstract List<Class<? extends Pet>> types();
 
     public Pet randomPet() { // Create one random Pet
-        List<Class<? extends Pet>> types = types();
+        List<Class<? extends Pet>> types = types(); //任何从Pet导出的类
         int n = rand.nextInt(types.size());
         try {
             return types.get(n).newInstance();

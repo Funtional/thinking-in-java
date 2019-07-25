@@ -9,6 +9,10 @@ import java.util.HashMap;
  * @date 2017-11-27 16:10
  */
 public class PetCount {
+
+    /**
+     * 一个Map计数器，用于计算每个类型有多少个对象； 类型--> 数量
+     */
     static class PetCounter extends HashMap<String, Integer> {
         public void count(String type) {
             Integer quantity = get(type);
@@ -20,6 +24,10 @@ public class PetCount {
         }
     }
 
+    /**
+     * 传入PetCreator，可以计算该PetCreator创建的数组中，各个宠物的数量
+     * @param creator
+     */
     public static void countPets(PetCreator creator) {
         PetCounter counter = new PetCounter();
         int size = 20;
