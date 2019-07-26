@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * 13.7 扫描输入
+ *
  * @author Cheng Cheng
  * @date 2017-11-22 16:34
  */

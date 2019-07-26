@@ -28,6 +28,7 @@ public abstract class Tester<C> {
 
     /**
      * 返回将被测试的初始化后的容器
+     *
      * @return
      */
     abstract C containerInitializer();

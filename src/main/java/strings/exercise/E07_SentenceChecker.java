@@ -6,7 +6,7 @@ package strings.exercise;
  */
 public class E07_SentenceChecker {
 
-    public static boolean matches(String text){
+    public static boolean matches(String text) {
         return text.matches("\\p{javaUpperCase}.*\\.");
     }
 

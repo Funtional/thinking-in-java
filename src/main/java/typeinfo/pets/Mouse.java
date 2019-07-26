@@ -6,11 +6,11 @@ package typeinfo.pets;
  */
 public class Mouse extends Rodent { // Mouse 老鼠;耗子;鼠标
 
-    public Mouse(String name){
+    public Mouse(String name) {
         super(name);
     }
 
-    public Mouse(){
+    public Mouse() {
         super();
     }
 

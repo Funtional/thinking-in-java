@@ -12,7 +12,7 @@ class ADaemon implements Runnable {
             TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
             print("Exiting via InterruptedException");
-        }finally {
+        } finally {
             print("This should always run?");
         }
     }

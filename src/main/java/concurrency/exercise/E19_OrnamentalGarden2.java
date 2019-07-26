@@ -10,6 +10,7 @@ import static net.mindview.util.Print.print;
 
 /**
  * 修改OrnamentalGarden.java，使其使用interrupt()
+ *
  * @author Cheng Cheng
  * @date 2018-07-29 12:37
  */

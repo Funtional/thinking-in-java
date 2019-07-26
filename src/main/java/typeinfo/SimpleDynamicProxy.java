@@ -6,6 +6,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * 14.7 动态代理
+ *
  * @author Cheng Cheng
  * @date 2017-11-29 17:14
  */
@@ -32,7 +33,7 @@ class DynamicProxyHandler implements InvocationHandler {
     }
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[]  args) throws Throwable {
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("**** proxy: " + proxy.getClass() + ", method: " + method + ", args: " + args);
         if (args != null) {
             for (Object arg : args) {

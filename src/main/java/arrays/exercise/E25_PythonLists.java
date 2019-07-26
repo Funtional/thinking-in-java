@@ -1,6 +1,7 @@
 package arrays.exercise;
 
 import java.util.*;
+
 import static net.mindview.util.Print.print;
 
 public class E25_PythonLists {

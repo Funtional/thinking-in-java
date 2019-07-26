@@ -71,6 +71,7 @@ class GreenhouseControls extends Controller {
     }
 
     private boolean light;
+
     public class LightOn extends Event {
         public LightOn(long delayTime) {
             super(delayTime);
@@ -86,7 +87,8 @@ class GreenhouseControls extends Controller {
             return "Light is on";
         }
     }
-    public class LightOff extends Event{
+
+    public class LightOff extends Event {
         public LightOff(long delayTime) {
             super(delayTime);
         }
@@ -103,7 +105,8 @@ class GreenhouseControls extends Controller {
     }
 
     private boolean water;
-    public class WaterOn extends Event{
+
+    public class WaterOn extends Event {
         public WaterOn(long delayTime) {
             super(delayTime);
         }
@@ -118,7 +121,8 @@ class GreenhouseControls extends Controller {
             return "Greenhouse water is on";
         }
     }
-    public class WaterOff extends Event{
+
+    public class WaterOff extends Event {
         public WaterOff(long delayTime) {
             super(delayTime);
         }
@@ -135,7 +139,8 @@ class GreenhouseControls extends Controller {
     }
 
     private String thermostat = "Day";
-    public class ThermostatNight extends Event{
+
+    public class ThermostatNight extends Event {
         public ThermostatNight(long delayTime) {
             super(delayTime);
         }
@@ -150,7 +155,8 @@ class GreenhouseControls extends Controller {
             return "Thermostat on night setting";
         }
     }
-    public class ThermostatDay extends Event{
+
+    public class ThermostatDay extends Event {
         public ThermostatDay(long delayTime) {
             super(delayTime);
         }
@@ -168,7 +174,7 @@ class GreenhouseControls extends Controller {
 
     // An example of an action() that inserts a
     // new one of itself into the event list:
-    public class Bell extends Event{
+    public class Bell extends Event {
         public Bell(long delayTime) {
             super(delayTime);
         }

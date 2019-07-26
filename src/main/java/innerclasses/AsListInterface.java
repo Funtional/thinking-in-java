@@ -16,10 +16,20 @@ public class AsListInterface {
     }
 }
 
-class Snow{}
-class Powder extends Snow{}
-class Light extends Powder{}
-class Heavy extends Powder{}
+class Snow {
+}
 
-class Crusty extends Snow{}
-class Slush extends Snow{}
+class Powder extends Snow {
+}
+
+class Light extends Powder {
+}
+
+class Heavy extends Powder {
+}
+
+class Crusty extends Snow {
+}
+
+class Slush extends Snow {
+}

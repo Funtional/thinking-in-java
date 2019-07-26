@@ -1,6 +1,7 @@
 package generics;
 
 import java.lang.reflect.Method;
+
 import static net.mindview.util.Print.print;
 
 // Does not implement Performs:

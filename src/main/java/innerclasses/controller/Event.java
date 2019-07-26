@@ -2,6 +2,7 @@ package innerclasses.controller;
 
 /**
  * 事件封装
+ *
  * @author Cheng Cheng
  * @date 2017-10-18 15:28
  */

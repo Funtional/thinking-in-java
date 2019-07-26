@@ -1,6 +1,7 @@
 package typeinfo;
 
 import typeinfo.interfacea.A;
+
 import static net.mindview.util.Print.print;
 
 /**

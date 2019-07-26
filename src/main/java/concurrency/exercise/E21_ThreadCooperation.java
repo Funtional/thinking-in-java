@@ -13,7 +13,7 @@ import static net.mindview.util.Print.print;
 public class E21_ThreadCooperation {
     public static void main(String[] args) {
         Runnable coop1 = new Coop1(),
-                 coop2 = new Coop2(coop1);
+                coop2 = new Coop2(coop1);
         ExecutorService exec = Executors.newCachedThreadPool();
         exec.execute(coop2);
         exec.execute(coop1);

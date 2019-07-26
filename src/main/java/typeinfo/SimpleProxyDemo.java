@@ -7,7 +7,7 @@ import static net.mindview.util.Print.print;
  * @date 2017-11-29 16:27
  */
 public class SimpleProxyDemo {
-    public static void consumer(Interface iface){
+    public static void consumer(Interface iface) {
         iface.doSomething();
         iface.somethingElse("bonobo");
     }

@@ -15,7 +15,7 @@ public class TheReplacements {
         String s = TextFile.read("src/main/java/com/thinking/chapter13/ch13_6_6/TheReplacements.java");
         // Match the specially commented block of text above:
         Matcher mInput = Pattern.compile("/\\*!(.*)!\\*/", Pattern.DOTALL).matcher(s);
-        if (mInput.find()){
+        if (mInput.find()) {
             s = mInput.group(1); // Captured by parentheses
         }
         // Replace two or more spaces with a single space:

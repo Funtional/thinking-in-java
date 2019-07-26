@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * 练习5：（3）实现Shape.java中的rotate(Shape)方法，让它能判断它所旋转的是不是Circle（如果是，就不执行）
+ *
  * @author Cheng Cheng
  * @date 2017-11-23 16:26
  */

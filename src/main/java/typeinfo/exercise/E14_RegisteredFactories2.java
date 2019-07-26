@@ -16,7 +16,7 @@ public class E14_RegisteredFactories2 {
     }
 }
 
-class Part2{
+class Part2 {
 
     static List<Class<? extends Part2>> partClasses = Arrays.asList(FuelFilter2.class, AirFilter2.class, CabinAirFilter2.class,
             OilFilter2.class, FanBelt2.class, GeneratorBelt2.class, PowerSteeringBelt2.class);

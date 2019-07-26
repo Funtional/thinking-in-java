@@ -7,6 +7,7 @@ import static net.mindview.util.Print.print;
 
 /**
  * Modify Exercise 15 to use explicit Lock objects.
+ *
  * @author Cheng Cheng
  * @date 2018-06-04 15:25
  */

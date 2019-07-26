@@ -12,7 +12,7 @@ public class E09_GetDeclaredFields {
 
     static Set<Class<?>> alreadyDisplayed = new HashSet<>();
 
-    static void printClasses(Class<?> c){
+    static void printClasses(Class<?> c) {
         // getSuperclass() returns null on Object:
         if (c == null) return;
         System.out.println(c.getName());

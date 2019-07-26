@@ -72,14 +72,14 @@ class WaxOn implements Runnable {
     @Override
     public void run() {
         //noinspection Duplicates
-        try{
-            while (!Thread.interrupted()){
+        try {
+            while (!Thread.interrupted()) {
                 printnb("Wax On! ");
                 TimeUnit.MILLISECONDS.sleep(200);
                 car.waxed();
                 car.waitForBuffing();
             }
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             print("Exiting via interrupt");
         }
         print("Ending Wax On task");
@@ -96,14 +96,14 @@ class WaxOff implements Runnable {
     @Override
     public void run() {
         //noinspection Duplicates
-        try{
-            while (!Thread.interrupted()){
+        try {
+            while (!Thread.interrupted()) {
                 car.waitForWaxing();
                 printnb("Wax Off! ");
                 TimeUnit.MILLISECONDS.sleep(200);
                 car.buffed();
             }
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             print("Exiting via interrupt");
         }
         print("Ending Wax Off task");

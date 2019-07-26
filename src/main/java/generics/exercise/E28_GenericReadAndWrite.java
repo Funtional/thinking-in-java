@@ -19,6 +19,7 @@ class Generic2<T> {
 public class E28_GenericReadAndWrite {
     /**
      * <? super T>是逆变
+     *
      * @param obj
      * @param item
      * @param <T>
@@ -29,6 +30,7 @@ public class E28_GenericReadAndWrite {
 
     /**
      * <? extends T>是协变
+     *
      * @param obj
      * @param <T>
      */

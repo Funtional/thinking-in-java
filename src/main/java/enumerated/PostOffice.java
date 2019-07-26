@@ -160,7 +160,7 @@ public class PostOffice {
     }
 
     public static void main(String[] args) {
-        for(Mail mail:Mail.generator(10)){
+        for (Mail mail : Mail.generator(10)) {
             print(mail.details());
             handle(mail);
             System.out.println("*****");

@@ -120,10 +120,12 @@ public class GreenhouseScheduler {
     }
 
     private Calendar lastTime = Calendar.getInstance();
+
     { // Adjust date to the half hour
         lastTime.set(Calendar.MINUTE, 30);
         lastTime.set(Calendar.SECOND, 00);
     }
+
     private float lastTemp = 65.0f;
     private int tempDirection = +1;
     private float lastHumidity = 50.0f;

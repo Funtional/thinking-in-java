@@ -10,9 +10,9 @@ public class FailFast {
         Collection<String> c = new ArrayList<String>();
         Iterator<String> it = c.iterator();
         c.add("An object");
-        try{
+        try {
             String s = it.next();
-        }catch (ConcurrentModificationException e){
+        } catch (ConcurrentModificationException e) {
             System.out.println(e);
         }
     }

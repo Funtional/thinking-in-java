@@ -1,6 +1,7 @@
 package typeinfo;
 
 import net.mindview.util.Null;
+
 import java.util.List;
 
 /**

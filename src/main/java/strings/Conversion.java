@@ -5,6 +5,7 @@ import java.util.Formatter;
 
 /**
  * 13.5.5 Formatter转换
+ *
  * @author Cheng Cheng
  * @date 2017-11-15 14:45
  */
@@ -20,7 +21,7 @@ public class Conversion {
         //f.format("f: %f\n",u);
         //f.format("e: %e\n",u);
 //        f.format("x: %x\n",u);
-        f.format("h: %h\n",u);
+        f.format("h: %h\n", u);
 
         System.out.println("----------------------");
 

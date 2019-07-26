@@ -8,7 +8,7 @@ import java.util.concurrent.*;
  * @author Cheng Cheng
  * @date 2018-04-17 17:20
  */
-class FibonacciSum2{
+class FibonacciSum2 {
     private static ExecutorService exec;
 
     public static int fib(int n) {
@@ -58,7 +58,7 @@ public class E10_FibonacciSum2 {
         FibonacciSum2.shutdown();
 
 
-        for(Future<Integer> fi:results){
+        for (Future<Integer> fi : results) {
             System.out.println(fi.get());
         }
     }

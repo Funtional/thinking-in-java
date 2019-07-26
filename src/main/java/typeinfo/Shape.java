@@ -6,7 +6,7 @@ package typeinfo;
  */
 public abstract class Shape {
 
-    public void draw(){
+    public void draw() {
         System.out.println(this + " draw()");
     }
 

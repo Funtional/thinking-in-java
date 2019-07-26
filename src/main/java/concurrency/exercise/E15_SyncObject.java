@@ -42,7 +42,7 @@ public class E15_SyncObject {
             }
         }.start();
 
-        new Thread(){
+        new Thread() {
             @Override
             public void run() {
                 tripleSynch.g();

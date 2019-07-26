@@ -40,6 +40,7 @@ interface SuperSmell extends SuperPower {
 
 /**
  * 超级英雄
+ *
  * @param <POWER>
  */
 class SuperHero<POWER extends SuperPower> {
@@ -56,24 +57,26 @@ class SuperHero<POWER extends SuperPower> {
 
 /**
  * 超级侦探
+ *
  * @param <POWER>
  */
-class SuperSleuth<POWER extends XRayVision> extends SuperHero<POWER>{
+class SuperSleuth<POWER extends XRayVision> extends SuperHero<POWER> {
 
     SuperSleuth(POWER power) {
         super(power);
     }
 
-    void see(){
+    void see() {
         power.seeThroughWalls();
     }
 }
 
 /**
  * 犬英雄
+ *
  * @param <POWER>
  */
-class CanineHero<POWER extends SuperHearing & SuperSmell> extends SuperHero<POWER>{
+class CanineHero<POWER extends SuperHearing & SuperSmell> extends SuperHero<POWER> {
     CanineHero(POWER power) {
         super(power);
     }
@@ -99,7 +102,7 @@ class SuperHearSmell implements SuperHearing, SuperSmell {
     }
 }
 
-class DogBoy extends CanineHero<SuperHearSmell>{
+class DogBoy extends CanineHero<SuperHearSmell> {
 
     DogBoy() {
         super(new SuperHearSmell());

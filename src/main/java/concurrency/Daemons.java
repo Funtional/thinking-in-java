@@ -15,7 +15,7 @@ class Daemon implements Runnable {
             printnb("DaemonSpawn " + i + " started, ");
         }
         for (int i = 0; i < t.length; i++) {
-            printnb("t[" + i + "].isDaemon() = " + t[i].isDaemon()+", ");
+            printnb("t[" + i + "].isDaemon() = " + t[i].isDaemon() + ", ");
         }
         while (true) {
             Thread.yield();

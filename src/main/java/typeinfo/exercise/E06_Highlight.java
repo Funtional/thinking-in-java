@@ -58,7 +58,7 @@ class HShape {
         shapes.add(this);
     }
 
-    void draw(){
+    void draw() {
         System.out.println(this + " draw()");
     }
 
@@ -71,17 +71,17 @@ class HShape {
     }
 
     // Basic approach (code duplication)
-    static void highlight1(Class<?> type){
-        for(HShape shape:shapes){
-            if(type.isInstance(shape)){
+    static void highlight1(Class<?> type) {
+        for (HShape shape : shapes) {
+            if (type.isInstance(shape)) {
                 shape.highlight();
             }
         }
     }
 
-    static void clearHighlight1(Class<?> type){
-        for(HShape shape:shapes){
-            if(type.isInstance(shape)){
+    static void clearHighlight1(Class<?> type) {
+        for (HShape shape : shapes) {
+            if (type.isInstance(shape)) {
                 shape.clearHighlight();
             }
         }

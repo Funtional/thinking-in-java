@@ -1,6 +1,6 @@
 package typeinfo;
 
-public class Square extends Shape{
+public class Square extends Shape {
 
     @Override
     public String toString() {

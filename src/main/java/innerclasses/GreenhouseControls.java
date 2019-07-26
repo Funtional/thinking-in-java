@@ -5,6 +5,7 @@ import innerclasses.controller.Event;
 
 /**
  * 温室控制器，模仿多重继承实现
+ *
  * @author Cheng Cheng
  * @date 2017-10-18 15:52
  */
@@ -110,7 +111,7 @@ public class GreenhouseControls extends Controller {
         }
     }
 
-    public class Bell extends Event{
+    public class Bell extends Event {
         public Bell(long delayTime) {
             super(delayTime);
         }
@@ -126,13 +127,13 @@ public class GreenhouseControls extends Controller {
         }
     }
 
-    public class Restart extends Event{
+    public class Restart extends Event {
         private Event[] eventList;
 
         public Restart(long delayTime, Event[] eventList) {
             super(delayTime);
             this.eventList = eventList;
-            for (Event e:eventList){
+            for (Event e : eventList) {
                 addEvent(e);
             }
         }
@@ -185,7 +186,7 @@ public class GreenhouseControls extends Controller {
         }
     }
 
-    public static class Terminate extends Event{
+    public static class Terminate extends Event {
         public Terminate(long delayTime) {
             super(delayTime);
         }

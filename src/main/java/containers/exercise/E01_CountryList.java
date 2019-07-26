@@ -65,7 +65,7 @@ class SqList {
         return -1;
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
@@ -75,6 +75,7 @@ class SqList {
 
     /**
      * 移除所有出现在顺序表c中的元素
+     *
      * @param c
      * @return
      */
@@ -85,16 +86,18 @@ class SqList {
 
     /**
      * 保留所有出现在顺序表c中的元素
+     *
      * @param c
      * @return
      */
-    public boolean retainAll(SqList c){
+    public boolean retainAll(SqList c) {
         Objects.requireNonNull(c);
-        return batchRemove(c,true);
+        return batchRemove(c, true);
     }
 
     /**
      * 批量删除操作
+     *
      * @param c
      * @param complement 是否删除补集
      * @return

@@ -2,6 +2,7 @@ package typeinfo;
 
 import typeinfo.interfacea.A;
 import typeinfo.packageaccess.HiddenC;
+
 import java.lang.reflect.Method;
 
 /**

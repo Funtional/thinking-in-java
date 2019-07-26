@@ -12,6 +12,7 @@ import static net.mindview.util.Print.print;
 
 /**
  * 14.6.1 类方法提取器
+ *
  * @author Cheng Cheng
  * @date 2017-11-29 14:18
  */

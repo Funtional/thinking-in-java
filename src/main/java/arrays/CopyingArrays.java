@@ -1,6 +1,7 @@
 package arrays;
 
 import java.util.Arrays;
+
 import static net.mindview.util.Print.print;
 
 /**

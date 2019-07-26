@@ -18,6 +18,7 @@ public class InterfaceExtractorProcessorFactory implements AnnotationProcessorFa
     /**
      * 存放注解的完整类型，如果未找到，apt就会抱怨没有找到相应的处理器，从而发出警告信息，
      * 然后什么也不做就退出
+     *
      * @return
      */
     @Override
@@ -27,6 +28,7 @@ public class InterfaceExtractorProcessorFactory implements AnnotationProcessorFa
 
     /**
      * 返回注解处理器
+     *
      * @param atds 类型声明的Set
      * @param env  将传入给处理器对象
      * @return

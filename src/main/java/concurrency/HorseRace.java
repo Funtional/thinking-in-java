@@ -79,9 +79,9 @@ public class HorseRace {
                 for (Horse horse : horses) {
                     print(horse.tracks());
                 }
-                for(Horse horse:horses){
-                    if(horse.getStrides()>=FINISH_LINE){
-                        print(horse+"won!");
+                for (Horse horse : horses) {
+                    if (horse.getStrides() >= FINISH_LINE) {
+                        print(horse + "won!");
                         exec.shutdownNow();
                         return;
                     }

@@ -8,6 +8,7 @@ import java.util.Random;
 
 /**
  * 14.4 注册工厂
+ *
  * @author Cheng Cheng
  * @date 2017-11-28 16:03
  */
@@ -19,13 +20,13 @@ public class RegisteredFactories {
     }
 }
 
-class Part{
+class Part {
 
     private static Random rand = new Random(47);
 
     static List<Factory<? extends Part>> partFactories = new ArrayList<>();
 
-    static{
+    static {
         // Collections.addAll() gives an "unchecked generic
         // array creation ... for varargs parameter" warning.
         partFactories.add(new FuelFilter.Factory());
@@ -48,7 +49,8 @@ class Part{
     }
 }
 
-class Filter extends Part{}
+class Filter extends Part {
+}
 
 class FuelFilter extends Filter {
     // Create a Class Factory for each specific type:
@@ -81,8 +83,8 @@ class CabinAirFilter extends Filter {
     }
 }
 
-class OilFilter extends Filter{
-    public static class Factory implements typeinfo.factory.Factory<OilFilter>{
+class OilFilter extends Filter {
+    public static class Factory implements typeinfo.factory.Factory<OilFilter> {
 
         @Override
         public OilFilter create() {
@@ -91,7 +93,8 @@ class OilFilter extends Filter{
     }
 }
 
-class Belt extends Part{}
+class Belt extends Part {
+}
 
 class FanBelt extends Belt {
     public static class Factory implements typeinfo.factory.Factory<FanBelt> {

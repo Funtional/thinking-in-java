@@ -5,7 +5,7 @@ package typeinfo.pets2;
  * @date 2017-11-27 15:53
  */
 public class Manx extends Cat {
-    public static class Factory implements typeinfo.factory.Factory<Manx>{
+    public static class Factory implements typeinfo.factory.Factory<Manx> {
         @Override
         public Manx create() {
             return new Manx();

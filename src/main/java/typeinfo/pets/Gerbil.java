@@ -5,10 +5,10 @@ package typeinfo.pets;
  * @date 2017-11-28 15:05
  */
 public class Gerbil extends Rodent { // Gerbil 沙鼠
-    public Gerbil(String name){
+    public Gerbil(String name) {
         super(name);
     }
 
-    public Gerbil(){
+    public Gerbil() {
     }
 }

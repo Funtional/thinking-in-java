@@ -16,7 +16,7 @@ import static net.mindview.util.Print.print;
 public class Interrupting {
     private static ExecutorService exec = Executors.newCachedThreadPool();
 
-    static void test(Runnable r) throws InterruptedException{
+    static void test(Runnable r) throws InterruptedException {
         Future<?> f = exec.submit(r);
         TimeUnit.MILLISECONDS.sleep(100);
         print("Interrupting " + r.getClass().getName());

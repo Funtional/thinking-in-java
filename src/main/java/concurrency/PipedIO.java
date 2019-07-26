@@ -52,7 +52,7 @@ class Receiver implements Runnable {
         try {
             while (true) {
                 // Blocks util characters are there:
-                printnb("Read: " + (char)in.read() + ",");
+                printnb("Read: " + (char) in.read() + ",");
             }
         } catch (IOException e) {
             print(e + " Receiver read exception");

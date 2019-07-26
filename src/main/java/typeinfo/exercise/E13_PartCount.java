@@ -1,10 +1,12 @@
 package typeinfo.exercise;
 
 import static net.mindview.util.Print.*;
+
 import net.mindview.util.TypeCounter;
 
 /**
  * 练习13：（3）将本章中的RegisteredFactories.java示例用于TypeCounter。
+ *
  * @author Cheng Cheng
  * @date 2017-11-28 15:28
  */

@@ -159,7 +159,7 @@ class InnerRunnable2 {
 }
 
 // A separate method to run some code as a task:
-class ThreadMethod{
+class ThreadMethod {
     private int countDown = 5;
     private Thread t;
     private String name;

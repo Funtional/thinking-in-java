@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * 控制器
+ *
  * @author Cheng Cheng
  * @date 2017-10-18 15:39
  */
@@ -15,7 +16,7 @@ public class Controller {
         eventList.add(e);
     }
 
-    public void run(){
+    public void run() {
         while (eventList.size() > 0) {
             for (Event e : new LinkedList<>(eventList)) {
                 if (e.ready()) {

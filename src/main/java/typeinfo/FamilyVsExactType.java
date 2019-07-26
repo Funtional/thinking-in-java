@@ -4,6 +4,7 @@ import static net.mindview.util.Print.*;
 
 /**
  * 14.5 instanceof与Class的等价性
+ *
  * @author Cheng Cheng
  * @date 2017-11-28 18:25
  */

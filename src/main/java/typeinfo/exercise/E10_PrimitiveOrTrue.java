@@ -21,7 +21,7 @@ public class E10_PrimitiveOrTrue {
         System.out.println("da.getClass() = " + da.getClass());
         String[] sa = new String[3];
         System.out.println("sa.getClass() = " + sa.getClass());
-        E10_PrimitiveOrTrue[] pot =new E10_PrimitiveOrTrue[3];
+        E10_PrimitiveOrTrue[] pot = new E10_PrimitiveOrTrue[3];
         System.out.println("pot.getClass() = " + pot.getClass());
         // Multi-dimensional arrays:
         int[][][] threed = new int[3][][];

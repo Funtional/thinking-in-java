@@ -86,7 +86,7 @@ abstract class PairManager {
 }
 
 // Synchronize the entire method:
-class PairManager1 extends PairManager{
+class PairManager1 extends PairManager {
     @Override
     public synchronized void increment() {
         p.incrementX();
@@ -96,11 +96,11 @@ class PairManager1 extends PairManager{
 }
 
 // Use a critical section:
-class PairManager2 extends PairManager{
+class PairManager2 extends PairManager {
     @Override
     public void increment() {
         Pair temp;
-        synchronized (this){
+        synchronized (this) {
             p.incrementX();
             p.incrementY();
             temp = getPair();
@@ -109,7 +109,7 @@ class PairManager2 extends PairManager{
     }
 }
 
-class PairManipulator implements Runnable{
+class PairManipulator implements Runnable {
     private PairManager pm;
 
     public PairManipulator(PairManager pm) {
@@ -118,7 +118,7 @@ class PairManipulator implements Runnable{
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             pm.increment();
         }
     }
@@ -129,7 +129,7 @@ class PairManipulator implements Runnable{
     }
 }
 
-class PairChecker implements Runnable{
+class PairChecker implements Runnable {
     private PairManager pm;
 
     public PairChecker(PairManager pm) {
@@ -138,7 +138,7 @@ class PairChecker implements Runnable{
 
     @Override
     public void run() {
-        while (true){
+        while (true) {
             pm.checkCounter.incrementAndGet();
             pm.getPair().checkState();
         }

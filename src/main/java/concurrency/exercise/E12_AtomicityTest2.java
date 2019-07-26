@@ -16,7 +16,7 @@ public class E12_AtomicityTest2 {
         AtomicityTest2 at = new AtomicityTest2();
         exec.execute(at);
 
-        while (true){
+        while (true) {
             int value = at.getValue();
             if (value % 2 != 0) {
                 System.out.println(value);

@@ -3,7 +3,6 @@ package strings.exercise;
 import java.util.Formatter;
 
 /**
- *
  * @author Cheng Cheng
  * @date 2017-11-15 14:08
  */

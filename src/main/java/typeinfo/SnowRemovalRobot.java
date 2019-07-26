@@ -52,7 +52,7 @@ public class SnowRemovalRobot implements Robot {
                 },
                 new Operation() {
                     @Override
-                    public String description()  {
+                    public String description() {
                         return name + " can clear the roof";
                     }
 

@@ -1,8 +1,10 @@
 package arrays;
 
 import net.mindview.util.Generated;
+
 import java.util.Arrays;
 import java.util.Comparator;
+
 import static net.mindview.util.Print.print;
 
 /**

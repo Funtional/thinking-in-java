@@ -4,7 +4,7 @@ package concurrency;
  * @author Cheng Cheng
  * @date 2018-04-17 15:47
  */
-public class SelfManaged implements Runnable{
+public class SelfManaged implements Runnable {
     private int countDown = 5; // 倒计时
     private Thread t = new Thread(this);
 

@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 /**
  * 练习20: （2）编写一个包含int、long、float、double和String属性的类。为它编写一个构造器，接收一个String参数。
- *   然后扫描该字符串，为各个属性赋值。再添加一个toString()方法，用来掩饰你的类是否工作正确。
+ * 然后扫描该字符串，为各个属性赋值。再添加一个toString()方法，用来掩饰你的类是否工作正确。
+ *
  * @author Cheng Cheng
  * @date 2017-11-22 16:50
  */
@@ -17,7 +18,7 @@ public class E20_Scanner {
     }
 }
 
-class DataHolder2{
+class DataHolder2 {
     private int i;
     private long l;
     private float f;
@@ -33,6 +34,7 @@ class DataHolder2{
         d = stdin.nextDouble();
         s = stdin.next("\\w+");
     }
+
     public String toString() {
         return i + " " + l + " " + f + " " + d + " " + s;
     }

@@ -33,7 +33,7 @@ public class E13_StartEnd2 {
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(s);
         while (m.find()) {
-            d.display("find() '" + m.group() + "' start = "+ m.start() + " end = " + m.end());
+            d.display("find() '" + m.group() + "' start = " + m.start() + " end = " + m.end());
         }
 
         if (m.lookingAt()) { // No reset() necessary
@@ -48,7 +48,7 @@ public class E13_StartEnd2 {
     public static void main(String[] args) {
         for (String in : Groups.POEM.split("\n")) {
             System.out.println("input : " + in);
-            for (String regex : new String[]{"\\w*ere\\w*", "\\w*at", "t\\w+", "T.*?."}){
+            for (String regex : new String[]{"\\w*ere\\w*", "\\w*at", "t\\w+", "T.*?."}) {
                 examine(in, regex);
             }
             System.out.println("----------------------------------");

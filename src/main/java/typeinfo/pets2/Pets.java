@@ -11,7 +11,8 @@ import static net.mindview.util.Print.print;
 
 /**
  * 练习15：（4）使用注册工厂来实现一个新的PetCreator，并修改Pets外观，使其使用这个新的Creator
- *      而并非另外连个Creator。确保使用Pets.java的其他示例仍可以正常工作。
+ * 而并非另外连个Creator。确保使用Pets.java的其他示例仍可以正常工作。
+ *
  * @author Cheng Cheng
  * @date 2017-11-28 11:45
  */
