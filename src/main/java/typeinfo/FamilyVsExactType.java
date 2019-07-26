@@ -21,6 +21,28 @@ public class FamilyVsExactType {
         print("x.getClass().equals(Derived.class) " + (x.getClass().equals(Derived.class)));
     }
 
+    /**
+     * OUTPUT:
+     * Testing x of type class typeinfo.Base
+     * x instanceof Base true
+     * x instanceof Derived false
+     * Base.isInstance(x) true
+     * Derived.isInstance(x) false
+     * x.getClass() == Base.class true
+     * x.getClass() == Derived.class false
+     * x.getClass().equals(Base.class) true
+     * x.getClass().equals(Derived.class) false
+     * -----------------------------------------
+     * Testing x of type class typeinfo.Derived
+     * x instanceof Base true
+     * x instanceof Derived true
+     * Base.isInstance(x) true
+     * Derived.isInstance(x) true
+     * x.getClass() == Base.class false
+     * x.getClass() == Derived.class true
+     * x.getClass().equals(Base.class) false
+     * x.getClass().equals(Derived.class) true
+     */
     public static void main(String[] args) {
         test(new Base());
         print("-----------------------------------------");
