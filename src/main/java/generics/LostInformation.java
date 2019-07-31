@@ -2,16 +2,16 @@ package generics;
 
 import java.util.*;
 
-class Frob {
+class Frob {//小物品;开关旋钮
 }
 
 class Fnorkle {
 }
 
-class Quark<Q> {
+class Quark<Q> {//夸克;快客;夸克奶酪;夸克干酪;赵域
 }
 
-class Particle<POSITION, MOMENTUM> {
+class Particle<POSITION, MOMENTUM> {//微尘;粒子系统;顆粒;颗粒度;分子
 }
 
 
