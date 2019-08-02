@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadFactory;
  * @author Cheng Cheng
  * @date 2018-04-19 16:13
  */
-public class CaptureUncaughtException {
+public class CaptureUncaughtException {// Capture 俘虏;俘获;捕获;用武力夺取;攻取;攻占;夺得;赢得;争得
     public static void main(String[] args) {
         ExecutorService exec = Executors.newCachedThreadPool(new HandlerThreadFactory());
         exec.execute(new ExceptionThread2());

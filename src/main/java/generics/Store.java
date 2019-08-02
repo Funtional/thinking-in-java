@@ -17,7 +17,7 @@ class Product {
         this.id = id;
         this.description = description;
         this.price = price;
-        System.out.println(toString());
+//        System.out.println(toString());
     }
 
     @Override

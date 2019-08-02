@@ -4,12 +4,12 @@ import java.util.concurrent.TimeUnit;
 
 import static net.mindview.util.Print.print;
 
-public class SimpleDaemons implements Runnable {
+public class SimpleDaemons implements Runnable { //守护进程
     @Override
     public void run() {
         try {
             while (true) {
-                TimeUnit.MILLISECONDS.sleep(100);
+                TimeUnit.MILLISECONDS.sleep(100); //milli 千，千分之一 + second 秒 → 千分之一秒 → 毫秒
                 print(Thread.currentThread() + " " + this);
             }
         } catch (InterruptedException e) {
@@ -24,6 +24,6 @@ public class SimpleDaemons implements Runnable {
             daemon.start();
         }
         print("All daemons started");
-        TimeUnit.MILLISECONDS.sleep(175);
+        TimeUnit.MILLISECONDS.sleep(175); //该时间改为更小（如20），守护线程将不打印消息。
     }
 }

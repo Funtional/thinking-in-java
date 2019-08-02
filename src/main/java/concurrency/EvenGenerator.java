@@ -12,7 +12,7 @@ public class EvenGenerator extends IntGenerator {
     public int next() {
         ++currentEvenValue; // Danger point here!
         ++currentEvenValue;
-        return currentEvenValue;
+        return currentEvenValue;//两次++操作后，currentEvenValue是偶数
     }
 
     public static void main(String[] args) {

@@ -21,7 +21,7 @@ public class EvenChecker implements Runnable {
         while (!generator.isCanceled()) {
             int val = generator.next();
             if (val % 2 != 0) {
-                System.out.println(val + " not even!");
+                System.out.println(val + " not even!"); // 不是偶数  奇数：odd/uneven
                 generator.cancel();
             }
         }

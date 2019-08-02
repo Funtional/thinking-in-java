@@ -4,6 +4,9 @@ import java.util.concurrent.TimeUnit;
 
 import static net.mindview.util.Print.printnb;
 
+/**
+ * 守护线程创建的线程也是守护线程
+ */
 class Daemon implements Runnable {
     private Thread[] t = new Thread[10];
 
